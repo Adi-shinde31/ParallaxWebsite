@@ -1,0 +1,124 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.section, .section, .section{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/Mumbai.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+.second{
+    background-image: url(../images/Jaipur.jpg);
+    z-index: 4;
+}
+.third{
+    background-image: url(../images/Indore.jpg);
+    z-index: 3;
+}
+.four{
+    background-image: url(../images/Kolkata.jpg);
+    z-index: 2;
+}
+.five{
+    background-image: url(../images/Manali.jpg);
+    z-index: 1;
+}
+.para{
+    padding: 30px;
+    background-color: rgba(41, 38, 38, 0.342);
+    z-index: 11;
+    padding: 30px;
+    text-align: justify;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 34px;
+    text-shadow: 1px 1px 1px rgb(252, 252, 252),0px 2px 12px #000;
+}
+span{
+    font-size: 42px;
+    padding: 0px 2px;
+}
+.section h2, .section h2, .section h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 60px;
+    padding: 10px 20px;
+    background-color: #fff; 
+    border-radius: 5px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.section h2:hover,.section h2:hover,.section h2:hover{
+    background-color:#000;
+    color: #fff;
+    transition: all .2s ease-out;
+    cursor:context-menu;
+}
+a{
+    position:fixed;
+    width: 30px;
+    height: 20px;
+    padding: 10px;
+    right: 50px;
+    bottom: 5%;
+    z-index:5;
+    background-color: bisque;
+    transition: all .1s ease-in;
+}
+.top{
+    width: 10px;
+    height: 10px;
+    border-top: 5px solid #000;
+    border-right: 5px solid #000;
+    transform: rotate(-45deg);
+    margin: auto 25%;
+    margin-top: 5px;
+}
+.top:hover{
+    
+    border-top: 5px solid #fff;
+    border-right: 5px solid #fff;
+}
+a:hover{
+    text-decoration: underline;
+    box-shadow: 0px 5px 8px #fff;
+}
+
+@media screen and (max-width:570px){
+    .section h2, .section h2, .section h2{
+        font-size: 48px;
+        letter-spacing: 7px;
+    }
+    .para{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:390px){
+    .section h2, .section h2, .section h2{
+        font-size: 28px;
+        letter-spacing: 6px;
+    }
+    a{
+        right: 22px;
+        bottom: 4%;
+    }
+}
+@media screen and (max-width:250px){
+    .section h2, .section h2, .section h2{
+        font-size: 18px;
+        letter-spacing: 4px;
+    }
+    a{
+        right: 12px;
+        bottom:2%;
+    }
+}
